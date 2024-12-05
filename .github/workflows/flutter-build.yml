@@ -1696,16 +1696,6 @@ jobs:
               vcpkg-triplet: x64-linux,
               extra_features: ",hwcodec",
             }
-          - {
-              arch: armv7,
-              target: armv7-unknown-linux-gnueabihf,
-              on: [self-hosted, Linux, ARM64],
-              distro: ubuntu18.04-rustdesk,
-              deb_arch: armhf,
-              sciter_arch: arm32,
-              vcpkg-triplet: arm-linux,
-              extra_features: "",
-            }
     steps:
       - name: Export GitHub Actions cache environment variables
         uses: actions/github-script@v6
